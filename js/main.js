@@ -1,1 +1,9 @@
-console.log('put your js here');
+(function() {
+
+
+$( "form" ).on( "submit", function( event ) {
+  event.preventDefault();
+  console.log( $( this ).serialize() );
+});
+
+}());
