@@ -18,6 +18,7 @@ $( "form#geoname" ).on( "submit", function( event ) {
 
     $.when(ajaxGeoname).then( function(result) {
       var topThreePlaces = result.geonames.slice(0,3);
+      $("#left-sidebar #results").text("");
       $.each(topThreePlaces, iterateResults);
 
     }).done();
