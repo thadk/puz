@@ -3,6 +3,7 @@
    put your styles here
    ========================================================================== */
 
+* { Box-sizing: border-box; }
 #main-container > div{
   float:left;
   padding-left: 0.5em;
@@ -10,8 +11,7 @@
 }
 
 #header {
-  min-width: 90%;
-
+  min-width: 100%;
   min-height: 40px;
   background-color: lightblue;
   border: solid 1px #000;
@@ -19,9 +19,8 @@
 }
 
 #left-sidebar {
-  max-width: 20%;
+  width: 20%;
   min-height: 800px;
-
   float:left;
   background-color: lightblue;
   border: solid 1px #000;
@@ -30,9 +29,36 @@
 
 
 #main-container {
-  min-width:80%;
+  float: right;
+  width:80%;
   min-height: 800px;
   background-color: lightblue;
   border: solid 1px #000;
+}
+
+@media (max-width: 600px) {
+  div#left-sidebar { 
+    min-width:100%;
+    background-color: lightblue;
+    min-height: 0px;
+    float: right;
+  }
+  div#main-container {
+    width: 100%;
+  }
+  /* Clearfix trick to reorder via CSS, also consider jQuery */
+  div#left-sidebar:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+  div#left-sidebar{ display: inline-block; }
+  /* start commented backslash hack \*/
+  * html #left-sidebar{ height: 1%; }
+  div#left-sidebar { display: block; background-color:lightblue;}
+  /* close commented backslash hack */
 }
 
