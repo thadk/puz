@@ -3,8 +3,9 @@ interview-puzzle
 
 A html challenge for interview candidates.
 
-  Using: CSS and jQuery
-  No Backbone, No other plugins or libs. (In our real code we strongly believe in working with Backbone, but for this challenge we want to test your foundation in JS / jQuery)
+Using: CSS and jQuery.
+
+No Backbone, No other plugins or libs. (In our real code we strongly believe in working with Backbone, but for this challenge we want to test your foundation in JS / jQuery)
 
 
 Only add code to main.css, index.html, and main.js
@@ -12,7 +13,7 @@ Feel free to edit alter, rename, or delete any of the code currently in index.ht
 Don't stress 'prettiness' of the page, that is what bootstrap and a design team is for.
 
 
-TODO:
+Tasks:
 -----
 
 1. Alter the CSS so the layout behaves as described in plan.png
