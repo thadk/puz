@@ -36,6 +36,10 @@
   border: solid 1px #000;
 }
 
+form#geoname #geonameName {
+  width: 60%;
+}
+
 @media (max-width: 600px) {
   div#left-sidebar { 
     min-width:100%;
@@ -46,19 +50,9 @@
   div#main-container {
     width: 100%;
   }
-  /* Clearfix trick to reorder via CSS, also consider jQuery */
-  div#left-sidebar:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
+
   div#left-sidebar{ display: inline-block; }
-  /* start commented backslash hack \*/
   * html #left-sidebar{ height: 1%; }
   div#left-sidebar { display: block; background-color:lightblue;}
-  /* close commented backslash hack */
 }
 
