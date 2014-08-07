@@ -1,7 +1,7 @@
 interview-puzzle
 ================
 
-A html challenge for interview candidates.
+An html challenge for interview candidates.
 
 Using: CSS and jQuery.
 
@@ -15,6 +15,8 @@ Don't stress 'prettiness' of the page, that is what bootstrap and a design team 
 
 Tasks:
 -----
+
+0. Fork this repo. 
 
 1. Alter the CSS so the layout behaves as described in plan.png
 
