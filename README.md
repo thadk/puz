@@ -8,8 +8,8 @@ Using: CSS and jQuery.
 No Backbone, No other plugins or libs. (In our real code we strongly believe in working with Backbone, but for this challenge we want to test your foundation in JS / jQuery)
 
 
-Only add code to main.css, index.html, and main.js
-Feel free to edit alter, rename, or delete any of the code currently in index.html or other files.
+Only add code to main.css, index.html, and main.js and feel free to edit alter, rename, or delete any of the code currently in index.html or other files.
+
 Don't stress 'prettiness' of the page, that is what bootstrap and a design team is for.
 
 
