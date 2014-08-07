@@ -42,10 +42,12 @@
     </div>
     <div id="left-sidebar">
       <form id="geoname" >
-        <input name="name" type="text"/>
-        <input name="geonameSubmit" id="geonameSubmit" type="submit" value="Submit"/>
+        <label for="name">Place:</label>
+        <input name="name" type="text" placeholder="cairo"/>
+        <input name="geonameSubmit" id="geonameSubmit" type="submit" value="search"/>
       </form>
-      TODO: a search box and button that will search the geonames API, and return a list of top 3 matches.
+      <ul id="results">
+      </ul>
     </div>
     <script src="js/main.js"></script>
     </body>

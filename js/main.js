@@ -8,11 +8,20 @@ $( "form#geoname" ).on( "submit", function( event ) {
 
   console.log(formContents);
   if (formContents !== undefined) {
+    var iterateResults = function (index, value) {
+      /* a little scary for XSS */
+      console.log(value);
+      $("#left-sidebar #results").append("<li><strong>"+value.countryName+"</strong> " + value.name + "</li>");
+    };
+
     ajaxGeoname = $.ajax("http://api.geonames.org/search?formatted=true&lang=en&username=aiddata&fuzzy=0&maxRows=5&startRow=0&orderby=relevance&type=json&"+formContents);
 
     $.when(ajaxGeoname).then( function(result) {
-      console.log(result.geonames.slice(0,3));
+      var topThreePlaces = result.geonames.slice(0,3);
+      $.each(topThreePlaces, iterateResults);
+
     }).done();
+
 
   }
 
